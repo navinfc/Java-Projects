@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <ImageView fitWidth="500" fitHeight="500" layoutX="300"  >
+            <image>
+                <Image url="@gameboard.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="50" fitHeight="50" layoutX="150" layoutY="150" onMouseClicked="#roll" >
+            <image>
+                <Image url="@dice.png"/>
+            </image>
+        </ImageView>
+        <Text fx:id="changeturn" layoutX="150" layoutY="130" text="Player 1's turn !!!!"></Text>
+        <Text fx:id="number" layoutY="250" layoutX="170" ></Text>
+        <ImageView fitWidth="20" fitHeight="50" layoutX="50" layoutY="300" >
+            <image>
+                <Image url="@red token.png"/>
+            </image>
+        </ImageView>
+        <ImageView fitWidth="20" fitHeight="50" layoutX="50" layoutY="400" >
+            <image>
+                <Image url="@green token.png"/>
+            </image>
+        </ImageView>
+        <Text layoutX="150" layoutY="315" text="Player 1"></Text>
+        <Text layoutX="150" layoutY="415" text="Player 2"></Text>
+        <ImageView fx:id="player1" fitWidth="20" fitHeight="50" layoutX="250" layoutY="450" >
+            <image>
+                <Image url="@red token.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="player2" fitWidth="20" fitHeight="50" layoutX="270" layoutY="450" >
+            <image>
+                <Image url="@green token.png"/>
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
